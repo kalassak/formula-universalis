@@ -1,4 +1,6 @@
-﻿import codecs
+﻿# this file tests for unicode support
+
+import codecs
 
 name = u"xap'\u0160t celentir lsang\u00edv"
 

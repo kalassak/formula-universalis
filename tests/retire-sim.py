@@ -1,3 +1,5 @@
+# tests frequency of retiring
+
 import random
 
 seasons = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]

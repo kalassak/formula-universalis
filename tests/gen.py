@@ -1,3 +1,5 @@
+# this file generates track lengths
+
 import random
 
 for x in xrange(0,14):
