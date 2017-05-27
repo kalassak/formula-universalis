@@ -213,52 +213,52 @@ bielosia_gp = Track(8.0, 1.0, 7.0, 4, 86.55)
 bongatar_gp = Track(5.0, 5.0, 4.0, 4, 77.20)
 space_gp = Track(1.0, 1.0, 10.0, 0, 73.63)
 #               TURN SPD  BRAK ACC  PIT
-cars.append(Car(6.0, 9.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Solea Racing")) #27
 cars.append(Car(6.0, 9.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Solea Racing"))
 cars.append(Car(6.0, 9.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Solea Racing"))
-cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Dotruga Formula Racing")) #26
+cars.append(Car(6.0, 9.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Solea Racing"))
 cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Dotruga Formula Racing"))
 cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Dotruga Formula Racing"))
-cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Cows Go Moo Racing")) #23
+cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Dotruga Formula Racing"))
 cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Cows Go Moo Racing"))
 cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Cows Go Moo Racing"))
-cars.append(Car(6.0, 8.0, 6.0, 6.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "BONGATAR")) #
+cars.append(Car(6.0, 7.0, 6.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Cows Go Moo Racing"))
 cars.append(Car(6.0, 8.0, 6.0, 6.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "BONGATAR"))
 cars.append(Car(6.0, 8.0, 6.0, 6.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "BONGATAR"))
-cars.append(Car(5.0, 10.0, 3.0, 9.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team V.V. Imperial")) #25
+cars.append(Car(6.0, 8.0, 6.0, 6.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "BONGATAR"))
 cars.append(Car(5.0, 10.0, 3.0, 9.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team V.V. Imperial"))
 cars.append(Car(5.0, 10.0, 3.0, 9.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team V.V. Imperial"))
-cars.append(Car(8.0, 7.0, 7.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Diigikwk Racers")) #26
+cars.append(Car(5.0, 10.0, 3.0, 9.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team V.V. Imperial"))
 cars.append(Car(8.0, 7.0, 7.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Diigikwk Racers"))
 cars.append(Car(8.0, 7.0, 7.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Diigikwk Racers"))
-cars.append(Car(5.0, 5.0, 3.0, 4.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Vincent")) #16
+cars.append(Car(8.0, 7.0, 7.0, 7.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Diigikwk Racers"))
+cars.append(Car(5.0, 5.0, 3.0, 4.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Vincent"))
 cars.append(Car(5.0, 5.0, 3.0, 4.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Vincent"))
 cars.append(Car(5.0, 5.0, 3.0, 4.0, 1.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Vincent"))
 cars.append(Car(5.0, 7.0, 3.0, 4.0, 2.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Blaland Racing"))
 cars.append(Car(5.0, 7.0, 3.0, 4.0, 2.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Blaland Racing"))
 cars.append(Car(5.0, 7.0, 3.0, 4.0, 2.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Blaland Racing"))
 #					  CRN  OVTK DEF  FINE TECH ADPT
-drivers.append(Driver(6.0, 6.0, 2.0, 4.0, 5.0, 3.0, 17, 47, u"ketila léqa pavúteka")) #17
-drivers.append(Driver(5.0, 3.0, 4.0, 3.0, 2.0, 2.0, 10, 19, u"khélok atep zailunaɰ")) #17
-drivers.append(Driver(3.0, 2.0, 3.0, 5.0, 2.0, 1.0, 5, 31, u"xap'ít celentir šaŋév")) #17
-drivers.append(Driver(5.0, 5.0, 4.0, 6.0, 7.0, 4.0, 1, 29, "Sago Aludetsei")) #18
-drivers.append(Driver(4.0, 2.0, 3.0, 2.0, 4.0, 1.0, 23, 11, "Tuto Keget")) #14
-drivers.append(Driver(4.0, 2.0, 4.0, 3.0, 2.0, 1.0, 20, 98, "Gorga Motxev")) #15
-drivers.append(Driver(4.0, 3.0, 3.0, 3.0, 3.0, 1.0, 9, 41, "Olga Candy")) #15
-drivers.append(Driver(4.0, 3.0, 3.0, 3.0, 2.0, 1.0, 13, 69, "Marisa Sanchez")) #15
-drivers.append(Driver(9.0, 6.0, 3.0, 5.0, 4.0, 1.0, 4, 42, "Frank Oosterhout")) #21
-drivers.append(Driver(7.0, 7.0, 5.0, 6.0, 7.0, 5.0, 11, 30, "Josh Wise")) #23
-drivers.append(Driver(3.0, 3.0, 4.0, 1.0, 5.0, 1.0, 19, " 2", "Body Hide")) #14
-drivers.append(Driver(1.0, 2.0, 1.0, 5.0, 5.0, 1.0, 16, " 3", "Bob")) #14
-drivers.append(Driver(7.0, 8.0, 3.0, 5.0, 4.0, 4.0, 2, 80, u"Ifloenne é Aya")) #19
-drivers.append(Driver(4.0, 3.0, 2.0, 4.0, 3.0, 1.0, 15, 81, u"Lyǽs Kæræsekæræn")) #16
-drivers.append(Driver(3.0, 3.0, 3.0, 3.0, 3.0, 1.0, 12, " 1", "Robbie Rotten")) #8
-drivers.append(Driver(3.0, 5.0, 4.0, 3.0, 4.0, 2.0, 6, 74, u"Bařàsiz Konoca")) #18
-drivers.append(Driver(5.0, 5.0, 3.0, 3.0, 3.0, 2.0, 14, 94, u"At'ipi Nesbeksë")) #18
-drivers.append(Driver(2.0, 1.0, 3.0, 4.0, 6.0, 2.0, 7, 53, u"Ešuro Tàcràɰë")) #15
-drivers.append(Driver(5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 18, 20, "Mac")) #17
-drivers.append(Driver(6.0, 6.0, 5.0, 3.0, 2.0, 2.0, 22, 21, "Orson")) #16
-drivers.append(Driver(5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 21, 22, "Philipe")) #15
+drivers.append(Driver(6.0, 6.0, 2.0, 4.0, 5.0, 3.0, 17, 47, u"ketila léqa pavúteka"))
+drivers.append(Driver(5.0, 3.0, 4.0, 3.0, 2.0, 2.0, 10, 19, u"khélok atep zailunaɰ"))
+drivers.append(Driver(3.0, 2.0, 3.0, 5.0, 2.0, 1.0, 5, 31, u"xap'ít celentir šaŋév"))
+drivers.append(Driver(5.0, 5.0, 4.0, 6.0, 7.0, 4.0, 1, 29, "Sago Aludetsei"))
+drivers.append(Driver(4.0, 2.0, 3.0, 2.0, 4.0, 1.0, 23, 11, "Tuto Keget"))
+drivers.append(Driver(4.0, 2.0, 4.0, 3.0, 2.0, 1.0, 20, 98, "Gorga Motxev"))
+drivers.append(Driver(4.0, 3.0, 3.0, 3.0, 3.0, 1.0, 9, 41, "Olga Candy"))
+drivers.append(Driver(4.0, 3.0, 3.0, 3.0, 2.0, 1.0, 13, 69, "Marisa Sanchez"))
+drivers.append(Driver(9.0, 6.0, 3.0, 5.0, 4.0, 1.0, 4, 42, "Frank Oosterhout"))
+drivers.append(Driver(7.0, 7.0, 5.0, 6.0, 7.0, 5.0, 11, 30, "Josh Wise"))
+drivers.append(Driver(3.0, 3.0, 4.0, 1.0, 5.0, 1.0, 19, " 2", "Body Hide"))
+drivers.append(Driver(1.0, 2.0, 1.0, 5.0, 5.0, 1.0, 16, " 3", "Bob"))
+drivers.append(Driver(7.0, 8.0, 3.0, 5.0, 4.0, 4.0, 2, 80, u"Ifloenne é Aya"))
+drivers.append(Driver(4.0, 3.0, 2.0, 4.0, 3.0, 1.0, 15, 81, u"Lyǽs Kæræsekæræn"))
+drivers.append(Driver(4.0, 4.0, 3.0, 3.0, 3.0, 1.0, 12, " 1", "Robbie Rotten"))
+drivers.append(Driver(3.0, 5.0, 4.0, 3.0, 4.0, 2.0, 6, 74, u"Bařàsiz Konoca"))
+drivers.append(Driver(1.0, 2.0, 2.0, 4.0, 7.0, 1.0, 14, 94, u"Jašo Neχëhe"))
+drivers.append(Driver(2.0, 1.0, 3.0, 4.0, 6.0, 2.0, 7, 53, u"Ešuro Tàcràɰë"))
+drivers.append(Driver(5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 18, 20, "Mac"))
+drivers.append(Driver(6.0, 6.0, 5.0, 3.0, 2.0, 2.0, 22, 21, "Orson"))
+drivers.append(Driver(5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 21, 22, "Philipe"))
 drivers.append(Driver(8.0, 5.0, 2.0, 5.0, 7.0, 3.0, 3, " 4", "Zaku Blaxon"))
 drivers.append(Driver(2.0, 2.0, 1.0, 1.0, 2.0, 1.0, 24, " 5", "Naxan Noxokolonaxon"))
 drivers.append(Driver(4.0, 3.0, 2.0, 4.0, 4.0, 2.0, 8, 44, "Kaxon Kaxutak"))
@@ -370,10 +370,6 @@ for min in xrange(0, 240): #run for 4 hours
 			wetness.append(0.0)
 		else:
 			wetness.append(wet)
-
-#adjust laptimes during rain based on wetness, adaptability = faster when wetness is closer to .5
-#change to wet tires at .5 wetness
-#check every lap for wetness and therefore what tires to be on
 
 wfile = open("wetness.txt", "w+")
 for value in wetness:
