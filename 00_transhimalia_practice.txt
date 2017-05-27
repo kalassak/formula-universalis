@@ -1,0 +1,19 @@
+Lap 1	47 132.830     	19 132.844     	31 132.716     	29 134.435     	11 132.503     	98 132.617     	13 133.335     	69 132.810     	00 132.813     	 1 132.370     	 2 132.996     	 3 133.042     	80 133.599     	81 133.965     	82 135.115     	
+Lap 2	 1 132.603     	11 133.120     	98 132.547     	31 132.667     	69 132.434     	00 132.813     	47 132.635     	19 132.794     	 2 133.073     	 3 133.173     	13 133.469     	80 133.314     	81 134.718     	29 133.227     	82 137.078     	
+Lap 3	 1 132.773     	98 133.073     	69 133.296     	31 133.278     	47 133.062     	11 132.739     	00 134.646     	19 132.293     	 2 133.452     	 3 133.809     	13 133.308     	80 133.949     	29 132.376     	81 135.103     	82 153.478 PIT	
+Pos	#No	Driver						Team					Time		Diff
+01	# 1	SAN	Henry Sandwhich			BONGATAR				0:6:37.745	-0.000
+02	#19	ZAI	khélok atep zailunaɰ	Team Solea Racing		0:6:37.930	-0.185
+03	#98	MOT	Gorga Motxev			Dotruga Formula Racing	0:6:38.237	-0.492
+04	#11	XIA	Tembio Xiahelvi			Dotruga Formula Racing	0:6:38.362	-0.617
+05	#47	PAV	ketila léqa pavúteka	Team Solea Racing		0:6:38.526	-0.780
+06	#69	SAN	Marisa Sanchez			Cows Go Moo Racing		0:6:38.540	-0.794
+07	#31	ŠAŊ	xap'ít celentir šaŋév	Team Solea Racing		0:6:38.661	-0.915
+08	# 2	MOL	Paul Molthus			BONGATAR				0:6:39.521	-1.775
+09	# 3	BOB	Bob						BONGATAR				0:6:40.024	-2.279
+10	#29	ALU	Sago Aludetsei			Dotruga Formula Racing	0:6:40.038	-2.292
+11	#13	SWE	Vernika Swerq			Cows Go Moo Racing		0:6:40.111	-2.366
+12	#00	OOS	Frank Oosterhout		Cows Go Moo Racing		0:6:40.273	-2.527
+13	#80	AYA	Ifloenne é Aya			Team V.V. Imperial		0:6:40.861	-3.115
+14	#81	KÆR	Lyǽs Kæræsekæræn		Team V.V. Imperial		0:6:43.786	-6.041
+15	#82	NUK	NUKKI					Team V.V. Imperial		0:7:05.671	-27.925
