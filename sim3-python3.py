@@ -1,4 +1,6 @@
-ï»¿import random
+#thanks to yqt for conversion to python 3
+
+import random
 import codecs
 import math
 
@@ -83,16 +85,16 @@ def run_lap(track, qualifying, car, driver, car_ahead_time, driver_ahead_def, ca
 	
 	#determine if it's raining for status updates
 	if rainstat_flag == True and intensity[int(math.floor(car.time/60))] > 0 and was_raining == False:
-		print "it has begun to rain"
+		print("it has begun to rain")
 		crashes.append((driver.name,4,lap,False))
 		was_raining = True
 		was_wet = True
 	if rainstat_flag == True and intensity[int(math.floor(car.time/60))] == 0 and was_raining == True:
-		print "the rain has ended"
+		print("the rain has ended")
 		crashes.append((driver.name,5,lap,False))
 		was_raining = False
 	if rainstat_flag == True and wetness[int(math.floor(car.time/60))] == 0 and was_wet == True:
-		print "track is dry"
+		print("track is dry")
 		crashes.append((driver.name,6,lap,False))
 		was_wet = False
 	
@@ -163,11 +165,11 @@ def run_lap(track, qualifying, car, driver, car_ahead_time, driver_ahead_def, ca
 	if random.random() < crash_prob:
 		type = random.random() * 10
 		if type < 8:
-			print 'crash (small)'
+			print('crash (small)')
 			crashes.append((driver.name,1,lap,overtaking_flag))
 			crash_time = random.gauss(1.5 * (1+current_wetness),.5 * (1+current_wetness))
 		elif type < 9:
-			print 'crash (pits)'
+			print('crash (pits)')
 			crashes.append((driver.name,2,lap,overtaking_flag))
 			crash_time = 12 + 5 * 1/(car.p/5)**(POWER*20) * (crash) + random.random()-.5 #pitting plus severity of crash for repairs
 			crash_time += current_wetness #a little slower if it's wet
@@ -175,7 +177,7 @@ def run_lap(track, qualifying, car, driver, car_ahead_time, driver_ahead_def, ca
 			car.pits += 1
 			pit = True
 		else:
-			print 'crash (out)'
+			print('crash (out)')
 			crashes.append((driver.name,3,lap,overtaking_flag))
 			crash_time = 0
 			out = True
@@ -238,9 +240,9 @@ cars.append(Car(5.0, 7.0, 3.0, 4.0, 2.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Blal
 cars.append(Car(5.0, 7.0, 3.0, 4.0, 2.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Blaland Racing"))
 cars.append(Car(5.0, 7.0, 3.0, 4.0, 2.0, 100.0, "DRY", 0.0, 999.0, 0, "Team Blaland Racing"))
 #					  CRN  OVTK DEF  FINE TECH ADPT
-drivers.append(Driver(6.0, 6.0, 2.0, 4.0, 5.0, 3.0, 17, 47, u"ketila lÃ©qa pavÃºteka"))
-drivers.append(Driver(5.0, 3.0, 4.0, 3.0, 2.0, 2.0, 10, 19, u"khÃ©lok atep zailunaÉ°"))
-drivers.append(Driver(3.0, 2.0, 3.0, 5.0, 2.0, 1.0, 5, 31, u"xap'Ã­t celentir Å¡aÅ‹Ã©v"))
+drivers.append(Driver(6.0, 6.0, 2.0, 4.0, 5.0, 3.0, 17, 47, u"ketila léqa pavúteka"))
+drivers.append(Driver(5.0, 3.0, 4.0, 3.0, 2.0, 2.0, 10, 19, u"khélok atep zailuna?"))
+drivers.append(Driver(3.0, 2.0, 3.0, 5.0, 2.0, 1.0, 5, 31, u"xap'ít celentir ša?év"))
 drivers.append(Driver(5.0, 5.0, 4.0, 6.0, 7.0, 4.0, 1, 29, "Sago Aludetsei"))
 drivers.append(Driver(4.0, 2.0, 3.0, 2.0, 4.0, 1.0, 23, 11, "Tuto Keget"))
 drivers.append(Driver(4.0, 2.0, 4.0, 3.0, 2.0, 1.0, 20, 98, "Gorga Motxev"))
@@ -250,12 +252,12 @@ drivers.append(Driver(9.0, 6.0, 3.0, 5.0, 4.0, 1.0, 4, 42, "Frank Oosterhout"))
 drivers.append(Driver(7.0, 7.0, 5.0, 6.0, 7.0, 5.0, 11, 30, "Josh Wise"))
 drivers.append(Driver(3.0, 3.0, 4.0, 1.0, 5.0, 1.0, 19, " 2", "Body Hide"))
 drivers.append(Driver(1.0, 2.0, 1.0, 5.0, 5.0, 1.0, 16, " 3", "Bob"))
-drivers.append(Driver(7.0, 8.0, 3.0, 5.0, 4.0, 4.0, 2, 80, u"Ifloenne Ã© Aya"))
-drivers.append(Driver(4.0, 3.0, 2.0, 4.0, 3.0, 1.0, 15, 81, u"LyÇ½s KÃ¦rÃ¦sekÃ¦rÃ¦n"))
+drivers.append(Driver(7.0, 8.0, 3.0, 5.0, 4.0, 4.0, 2, 80, u"Ifloenne é Aya"))
+drivers.append(Driver(4.0, 3.0, 2.0, 4.0, 3.0, 1.0, 15, 81, u"Ly?s Kæræsekæræn"))
 drivers.append(Driver(4.0, 4.0, 3.0, 3.0, 3.0, 1.0, 12, " 1", "Robbie Rotten"))
-drivers.append(Driver(3.0, 5.0, 4.0, 3.0, 4.0, 2.0, 6, 74, u"BaÅ™Ã siz Konoca"))
-drivers.append(Driver(1.0, 2.0, 2.0, 4.0, 7.0, 1.0, 14, 94, u"JaÅ¡o NeÏ‡Ã«he"))
-drivers.append(Driver(2.0, 1.0, 3.0, 4.0, 6.0, 2.0, 7, 53, u"EÅ¡uro TÃ crÃ É°Ã«"))
+drivers.append(Driver(3.0, 5.0, 4.0, 3.0, 4.0, 2.0, 6, 74, u"Baràsiz Konoca"))
+drivers.append(Driver(1.0, 2.0, 2.0, 4.0, 7.0, 1.0, 14, 94, u"Jašo Ne?ëhe"))
+drivers.append(Driver(2.0, 1.0, 3.0, 4.0, 6.0, 2.0, 7, 53, u"Ešuro Tàcrà?ë"))
 drivers.append(Driver(5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 18, 20, "Mac"))
 drivers.append(Driver(6.0, 6.0, 5.0, 3.0, 2.0, 2.0, 22, 21, "Orson"))
 drivers.append(Driver(5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 21, 22, "Philipe"))
@@ -308,7 +310,7 @@ elif TRACK.w == 0: #space
 	rint = 0.0
 	rdur = 0.0
 else:
-	print 'no weather'
+	print('no weather')
 #is it raining at start?
 if random.random() < rfreq/20.0: #it is raining
 	RAIN_FLAG = True
@@ -328,7 +330,7 @@ if random.random() < rfreq/20.0: #it is raining
 	seconds_of_rain_left -= seconds_rained
 	if seconds_of_rain_left < 0:
 		seconds_of_rain_left = 0
-	print 'it is raining'
+	print('it is raining')
 else: #it is dry
 	RAIN_FLAG = False
 	WET_FLAG = False
@@ -336,7 +338,7 @@ else: #it is dry
 	intensity.append(0.0)
 
 #fill in weather values for every 60 seconds
-for min in xrange(0, 240): #run for 4 hours
+for min in range(0, 240): #run for 4 hours
 	#it needs to start raining randomly during the race
 	if seconds_of_rain_left <= 0: #it's not raining
 		intflag = False
@@ -398,7 +400,7 @@ for car, driver in zip(cars, drivers):
 	
 file.write('Lap 0\t')
 
-temp = zip(cars, drivers, lap_stats)
+temp = list(zip(cars, drivers, lap_stats))
 temp.sort(key=lambda x: x[0].time, reverse=False)
 cars, drivers, lap_stats = [list(a) for a in zip(*temp)]
 
@@ -410,7 +412,7 @@ for stat in lap_stats:
 	file.write(q)
 file.write('\n')
 #now really race
-for k in xrange(0,LAPS):
+for k in range(0,LAPS):
 	lap_stats = []
 	retire = []
 	
@@ -446,7 +448,7 @@ for k in xrange(0,LAPS):
 		retdrivers.append(drivers.pop(retiree_index-j))
 		j += 1
 		
-	temp = zip(cars, drivers, lap_stats)
+	temp = list(zip(cars, drivers, lap_stats))
 	temp.sort(key=lambda x: x[0].time, reverse=False)
 	cars, drivers, lap_stats = [list(a) for a in zip(*temp)]
 	
@@ -459,7 +461,7 @@ for k in xrange(0,LAPS):
 	file.write('\n')
 
 #final results
-temp = zip(cars, drivers)
+temp = list(zip(cars, drivers))
 if QUALIFYING == False:
 	temp.sort(key=lambda x: x[0].time, reverse=False)
 if QUALIFYING == True:
@@ -467,15 +469,15 @@ if QUALIFYING == True:
 cars, drivers = zip(*temp)
 
 if len(retcars) > 0:
-	temp = zip(retcars, retdrivers)
-	temp.sort(key=lambda x: x[0].time, reverse=True)
-	retcars, retdrivers = zip(*temp)
+	temp = list(zip(retcars, retdrivers))
+	sorted(temp, key=lambda x: x[0].time, reverse=True)
+	retcars, retdrivers = list(zip(*temp))
 
 i = 0
 file.write("\n-- OFFICIAL RESULTS --\n")
 file.write("Pos\t#No\tDriver\t\t\t\t\t\tTeam\t\t\t\t\tTime\t\tDiff\t\tPits\tBest\n")
 first = cars[0].time
-for car, driver in zip(cars,drivers):
+for car, driver in list(zip(cars,drivers)):
 	i += 1
 	if i < 10:
 		i1 = "0%i" % i
@@ -497,16 +499,16 @@ for car, driver in zip(cars,drivers):
 	else:
 		driver_name = driver.name
 	tab1t = len(driver_name)/4
-	tab1 = "\t"*(6-tab1t)
+	tab1 = "\t"*int(6-tab1t)
 	tab2t = len(car.team)/4
-	tab2 = "\t"*(6-tab2t)
+	tab2 = "\t"*int(6-tab2t)
 	diff = "%.3f" % diff
 	tab3t = (len(str(diff))+1)/4
-	tab3 = "\t"*(3-tab3t)
+	tab3 = "\t"*int(3-tab3t)
 	p = "%s\t#%s\t%s\t%s%s%s%s%i:%i:%s\t-%s%s%i\t\t%.3f\n" % (i1, driver.num, last_name, driver_name, tab1, car.team, tab2, hours,minutes,seconds, diff, tab3, car.pits, car.bestlap)
 	file.write(p)
 
-for car, driver in zip(retcars, retdrivers):
+for car, driver in list(zip(retcars, retdrivers)):
 	i += 1
 	last_name = driver.name.split(' ')[-1][:3].upper()
 	
@@ -516,9 +518,9 @@ for car, driver in zip(retcars, retdrivers):
 	else:
 		driver_name = driver.name
 	tab1t = len(driver_name)/4
-	tab1 = "\t"*(6-tab1t)
+	tab1 = "\t"*int(6-tab1t)
 	tab2t = len(car.team)/4
-	tab2 = "\t"*(6-tab2t)
+	tab2 = "\t"*int(6-tab2t)
 	
 	p = "%s\t#%s\t%s\t%s%s%s%sRETIRED\t\tDNF\t\t\t%i\t\t%.3f\n" % (i, driver.num, last_name, driver_name, tab1, car.team, tab2, car.pits, car.bestlap)
 	file.write(p)
